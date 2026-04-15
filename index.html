@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GreenLife Living</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a href="#home" class="brand-link">🌿 GreenLife Living</a>
+      <nav class="nav-links d-none d-lg-flex gap-4">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#guides">Guides</a>
+        <a href="#habits">Habits</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="hamburger d-lg-none" id="menuToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile nav -->
+  <div class="mobile-nav-overlay" id="navOverlay"></div>
+  <div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-header">
+      <span class="brand-link">🌿 GreenLife</span>
+      <button class="mobile-nav-close" id="menuClose" aria-label="Close">✕</button>
+    </div>
+    <nav class="mobile-nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#guides">Guides</a>
+      <a href="#habits">Habits</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+
+  <main>
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-6">
+            <p class="eyebrow">Eco-friendly lifestyle guide</p>
+            <h1>Live greener every day with practical, beautiful habits.</h1>
+            <p class="hero-copy">GreenLife Living helps people adopt sustainable routines for home, kitchen, travel, and self-care — with a fresh, modern approach.</p>
+            <div class="hero-buttons mt-4">
+              <a href="#guides" class="btn btn-primary btn-xl me-3">Explore guides</a>
+              <a href="#contact" class="btn btn-outline-primary btn-xl">Get support</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-panel p-5 rounded-4">
+              <div class="panel-top d-flex justify-content-between align-items-center mb-4">
+                <span class="panel-badge">✨ Featured</span>
+                <span class="panel-value">Eco Score 92%</span>
+              </div>
+              <h2>Simple changes, big impact</h2>
+              <p class="panel-copy">Follow easy eco habits that reduce waste and improve daily wellbeing.</p>
+              <div class="row g-3 mt-4">
+                <div class="col-sm-6">
+                  <div class="stat-card p-3 rounded-4">
+                    <strong>12+</strong>
+                    <p>Reusable ideas</p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="stat-card p-3 rounded-4">
+                    <strong>24/7</strong>
+                    <p>Green support</p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="stat-card p-3 rounded-4">
+                    <strong>100%</strong>
+                    <p>Responsive design</p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="stat-card p-3 rounded-4">
+                    <strong>🌱 Eco</strong>
+                    <p>Friendly layout</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-6">
+            <div class="about-card p-5 rounded-4">
+              <span class="eyebrow">About GreenLife</span>
+              <h2>Build a greener lifestyle without the overwhelm.</h2>
+              <p>GreenLife Living is a place for eco-friendly lifestyle guidance. It showcases practical content, modern visuals, and real guidance for daily sustainable living.</p>
+              <a href="#guides" class="btn btn-outline-primary btn-sm mt-3">Explore practical guides</a>
+              <ul class="about-list mt-4">
+                <li>♻️ Reuse and reduce plastic waste.</li>
+                <li>🛍️ Choose eco-friendly products for home and kitchen.</li>
+                <li>🧘 Adopt mindful habits that support wellness.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="feature-card p-4 rounded-4">
+                  <div class="feature-icon">🗑️</div>
+                  <h5>Zero Waste</h5>
+                  <p>Small swaps with a large environmental impact.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="feature-card p-4 rounded-4">
+                  <div class="feature-icon">🥗</div>
+                  <h5>Plant-Based</h5>
+                  <p>Easy food and shopping habits for eco-conscious living.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="feature-card p-4 rounded-4">
+                  <div class="feature-icon">🏡</div>
+                  <h5>Green Home</h5>
+                  <p>Cleaner spaces with natural decor and well-being tips.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="feature-card p-4 rounded-4">
+                  <div class="feature-icon">💧</div>
+                  <h5>Water Saving</h5>
+                  <p>Daily actions that reduce water use and energy waste.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="guides" class="section bg-soft">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="eyebrow">Practical guides</p>
+          <h2 class="section-heading">Easy eco habits to follow</h2>
+          <a href="#habits" class="btn btn-primary btn-sm mt-3">See habit ideas</a>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="guide-card p-4 rounded-4">
+              <div class="guide-icon">🍳</div>
+              <h5>Reusable kitchen</h5>
+              <p>A guide to reusable alternatives that cut waste and simplify meal prep.</p>
+              <a href="#contact" class="card-link">Learn more →</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="guide-card p-4 rounded-4">
+              <div class="guide-icon">👗</div>
+              <h5>Minimal wardrobe</h5>
+              <p>Choose better fabrics, fewer items, and a more sustainable closet.</p>
+              <a href="#contact" class="card-link">Learn more →</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="guide-card p-4 rounded-4">
+              <div class="guide-icon">🧴</div>
+              <h5>Sustainable self-care</h5>
+              <p>Eco-friendly beauty and wellness routines for everyday life.</p>
+              <a href="#contact" class="card-link">Learn more →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="habits" class="section">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-heading">Daily habits for a greener life</h2>
+          <p class="text-muted mx-auto" style="max-width: 640px;">Small, consistent actions compound into a meaningful difference for the planet and your wellbeing.</p>
+          <a href="#contact" class="btn btn-outline-primary btn-sm mt-3">Start your eco plan</a>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-xl-3">
+            <div class="habit-card p-4 rounded-4">
+              <div class="habit-icon">🌅</div>
+              <h5>Morning ritual</h5>
+              <p>Start with plant-based breakfast and reusable containers.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="habit-card p-4 rounded-4">
+              <div class="habit-icon">🎒</div>
+              <h5>Zero waste kit</h5>
+              <p>Carry reusable bags, bottles, and utensils on the go.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="habit-card p-4 rounded-4">
+              <div class="habit-icon">🌿</div>
+              <h5>Home garden</h5>
+              <p>Grow herbs and small plants to brighten your space.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="habit-card p-4 rounded-4">
+              <div class="habit-icon">🛒</div>
+              <h5>Eco shopping</h5>
+              <p>Choose products with minimal packaging and natural materials.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section bg-soft">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="eyebrow">What readers say</p>
+          <h2 class="section-heading">GreenLife users love the simple guidance</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="testimonial-card p-4 rounded-4">
+              <p>"GreenLife inspired me to switch to reusable kitchen tools and reduce so much waste. The tips were easy to follow."</p>
+              <div class="testimonial-author">
+                <div class="author-avatar">PS</div>
+                <strong>Priya Sharma</strong>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="testimonial-card p-4 rounded-4">
+              <p>"The eco habits section helped me build a morning routine that feels healthier and more sustainable."</p>
+              <div class="testimonial-author">
+                <div class="author-avatar">RP</div>
+                <strong>Raj Patel</strong>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="testimonial-card p-4 rounded-4">
+              <p>"This site design is perfect for a project prototype. It looks clean, modern, and practical for green living content."</p>
+              <div class="testimonial-author">
+                <div class="author-avatar">AM</div>
+                <strong>Anika Mehta</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-5">
+            <div class="contact-panel p-5 rounded-4">
+              <div class="contact-icon">💌</div>
+              <h2>Ready to live greener?</h2>
+              <p>Share your eco goals and start building a sustainable routine with GreenLife Living.</p>
+              <ul class="contact-perks mt-4">
+                <li>✅ Free eco tips every week</li>
+                <li>✅ Personalized habit guide</li>
+                <li>✅ Community support</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <form id="contactForm" class="contact-form p-4 p-lg-5 rounded-4">
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your name" required />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Your email" required />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Tell us about your eco goals"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg w-100">Send Message 🌿</button>
+              <p id="formStatus" class="mt-3 text-success d-none text-center fw-semibold">🎉 Thanks! We'll be in touch soon.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer py-5">
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <div>
+          <p class="brand-link mb-1" style="font-size:1rem;">🌿 GreenLife Living</p>
+          <p class="mb-0 text-muted small">© 2026 GreenLife Living. Making sustainable living simple.</p>
+        </div>
+        <div class="social-links d-flex gap-3">
+          <a href="#" class="social-pill">📸 Instagram</a>
+          <a href="#" class="social-pill">📌 Pinterest</a>
+          <a href="#" class="social-pill">💼 LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Back to top">↑</button>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-6vR2U1O7yrd5rDx+9KK9SXnDV+MVAfXIWT2Ddvf0vHI=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
